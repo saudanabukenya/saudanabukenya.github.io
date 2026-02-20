@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Sauda Nabukenya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1e1b18;--deep-navy:#141210;--gold:#c9973f;--gold-light:#ddb76a;--gold-pale:#f0e0bc;--copper:#b07340;--cream:#f8f4ed;--warm-white:#fdfbf7;--sand:#eee8de;--text:#2a2520;--text-mid:#5c574e;--text-light:#8a8272;--border:#e0d9ce;--heading:'Playfair Display',Georgia,serif;--body:'Outfit',-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--cream);color:var(--text);-webkit-font-smoothing:antialiased}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(30,27,24,0.97);backdrop-filter:blur(20px)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 48px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-name{font-family:var(--heading);font-size:18px;font-weight:500;color:var(--gold);text-decoration:none;letter-spacing:.02em}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:12px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55);text-decoration:none;transition:color .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold-light)}
+.nav-cv{font-size:11px!important;font-weight:500!important;color:var(--gold)!important;border:1px solid rgba(201,151,63,.4);padding:7px 18px;letter-spacing:.08em!important;transition:all .3s!important}
+.nav-cv:hover{background:rgba(201,151,63,.1);border-color:var(--gold)}
+section{padding:100px 48px}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-label{font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:16px}
+.section-label::before{content:'';width:32px;height:1px;background:var(--gold)}
+.section-title{font-family:var(--heading);font-size:clamp(32px,3.5vw,48px);font-weight:400;line-height:1.2;color:var(--text);margin-bottom:48px}
+.stl{color:#fff}
+.page-header{background:var(--navy);color:#fff;padding:120px 48px 64px;position:relative}
+.page-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,151,63,.3),transparent)}
+.page-header-inner{max-width:1200px;margin:0 auto}
+.page-header .section-label{margin-bottom:16px}
+.page-header h1{font-family:var(--heading);font-size:clamp(36px,4vw,56px);font-weight:400;color:#fff;line-height:1.15}
+.page-header p{font-size:18px;font-weight:300;line-height:1.75;color:rgba(255,255,255,.6);max-width:640px;margin-top:20px}
+footer{background:var(--deep-navy);padding:32px 48px;text-align:center;font-size:13px;color:rgba(255,255,255,.25);border-top:1px solid rgba(255,255,255,.04)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.badge-upcoming{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--copper);background:rgba(176,115,64,.1);padding:3px 10px;margin-left:6px;vertical-align:middle;border:1px solid rgba(176,115,64,.2)}
+@media(max-width:768px){section{padding:72px 24px}.nav-inner{padding:0 24px}.nav-links a:not(.nav-cv){display:none}.page-header{padding:100px 24px 48px}footer{padding:24px}}
+
+.cont{background:var(--warm-white)}
+.contg{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.contl{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.contv{font-size:16px;color:var(--text-mid);line-height:1.7}
+.contv a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--border);transition:all .2s}
+.contv a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.mi{padding:24px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.mi:first-child{border-top:1px solid var(--border)}
+.mit{font-size:17px;font-weight:400;color:var(--text)}
+.mit strong{font-weight:500}
+.mio{font-size:13px;color:var(--text-light);margin-top:4px}
+.miy{font-family:var(--heading);font-size:16px;color:var(--text-light)}
+@media(max-width:768px){.contg{grid-template-columns:1fr;gap:32px}.mi{grid-template-columns:1fr;gap:4px}}
+</style>
+
+</head>
+<body>
+<nav><div class="nav-inner"><a href="index.html" class="nav-name">Sauda Nabukenya</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="archives.html">Archives</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="contact.html" class="active">Contact</a><a href="Nabukenya_CV_2026.pdf" class="nav-cv" target="_blank">CV</a></div></div></nav>
+
+<div class="page-header"><div class="page-header-inner"><div class="section-label">Contact</div><h1>Get in Touch</h1></div></div>
+
+<section class="cont">
+  <div class="section-inner reveal">
+    <div class="contg">
+      <div><div class="contl">Email</div><div class="contv"><a href="mailto:sauda.nabukenya@usu.edu">sauda.nabukenya@usu.edu</a></div></div>
+      <div><div class="contl">Office</div><div class="contv">Department of History, Cultures &amp; Ideas<br>Utah State University<br>Logan, Utah 84322</div></div>
+      <div><div class="contl">Profiles</div><div class="contv"><a href="https://artsci.usu.edu/history-cultures-ideas/history/directory/sauda-nabukenya">USU Faculty Page</a><br><a href="https://scholar.google.com/citations?user=oPnmRmsAAAAJ&hl=en">Google Scholar</a><br><a href="https://www.linkedin.com/in/sauda-nabukenya-5a8b40124/">LinkedIn</a><br><a href="https://www.imdb.com/name/nm12769304/">IMDb</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream);border-top:1px solid var(--border)">
+  <div class="section-inner reveal">
+    <div class="section-label">In the Media</div>
+    <div class="section-title">Interviews &amp; Appearances</div>
+    <div>
+      <div class="mi"><div><div class="mit"><strong>How to Become a Tyrant</strong> &mdash; Documentary Series</div><div class="mio">Netflix</div></div><div class="miy">2021</div></div>
+      <div class="mi"><div><div class="mit"><strong>Rackham Graduate School Commencement</strong> &mdash; Featured Speaker</div><div class="mio">University of Michigan</div></div><div class="miy">2024</div></div>
+      <div class="mi"><div><div class="mit"><strong>Reflexivity and Archiving</strong> &mdash; Feature on the High Court Archive</div><div class="mio">Archivoz Magazine</div></div><div class="miy">2018</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Sauda Nabukenya &middot; Utah State University</footer>
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add('visible')});},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(e=>o.observe(e));
+</script>
+</body>
+</html>
