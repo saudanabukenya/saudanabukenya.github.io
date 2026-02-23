@@ -1,182 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archives | Sauda Nabukenya</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --navy: #1e1b18;
-            --gold: #c9973f;
-            --cream: #f8f4ed;
-            --warm-white: #fdfbf7;
-            --sand: #eee8de;
-            --text: #2a2520;
-            --text-mid: #5c574e;
-            --border: #e0d9ce;
-            --heading: 'Playfair Display', Georgia, serif;
-            --body: 'Outfit', sans-serif;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: var(--body); 
-            background-color: var(--warm-white); 
-            color: var(--text); 
-            line-height: 1.6; 
-            padding-top: 80px; 
-        }
-
-        /* Navigation */
-        nav { 
-            position: fixed; top: 0; left: 0; right: 0; height: 80px; 
-            background: rgba(253, 251, 247, 0.95); backdrop-filter: blur(10px); 
-            display: flex; align-items: center; justify-content: space-between; 
-            padding: 0 5%; z-index: 1000; border-bottom: 1px solid var(--border); 
-        }
-        .nav-name { font-family: var(--heading); font-size: 1.5rem; font-weight: 700; color: var(--navy); text-decoration: none; }
-        .nav-links { display: flex; gap: 2rem; align-items: center; }
-        .nav-links a { text-decoration: none; color: var(--text-mid); font-size: 0.95rem; transition: 0.3s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--gold); }
-        .nav-cv { padding: 8px 18px; border: 1px solid var(--gold); border-radius: 4px; color: var(--gold) !important; }
-
-        /* Content Sections */
-        .container { max-width: 1100px; margin: 0 auto; padding: 60px 5%; }
-        .section-label { text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; font-weight: 600; color: var(--gold); margin-bottom: 1rem; display: block; }
-        h1 { font-family: var(--heading); font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; color: var(--navy); }
-        h2 { font-family: var(--heading); font-size: 2rem; margin-bottom: 1.5rem; }
-        .intro { font-size: 1.25rem; color: var(--text-mid); margin-bottom: 3rem; max-width: 850px; }
-
-        /* Gallery Grid */
-        .ps { margin-top: 4rem; }
-        .pst { font-family: var(--heading); font-size: 1.8rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
-        .pr { display: grid; gap: 2rem; margin-bottom: 2rem; }
-        .pr2w { grid-template-columns: 1fr; }
-        .pr2 { grid-template-columns: repeat(2, 1fr); }
-        .pr3 { grid-template-columns: repeat(3, 1fr); }
-        
-        .pi { background: white; padding: 15px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
-        .pi img { width: 100%; height: auto; display: block; margin-bottom: 15px; }
-        .pc { font-size: 0.9rem; color: var(--text-mid); line-height: 1.5; }
-        .pc strong { color: var(--navy); display: block; margin-bottom: 5px; font-size: 1rem; }
-
-        /* Video Grid */
-        .vg { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0; }
-        .vw { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 4px; border: 1px solid var(--border); background: #000; }
-        .vw iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
-        footer { background: var(--navy); color: var(--sand); padding: 40px 5%; text-align: center; margin-top: 80px; font-size: 0.9rem; }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .pr2, .pr3, .vg { grid-template-columns: 1fr; }
-            .nav-links { display: none; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archives | Sauda Nabukenya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1e1b18;--deep-navy:#141210;--gold:#c9973f;--gold-light:#ddb76a;--gold-pale:#f0e0bc;--copper:#b07340;--cream:#f8f4ed;--warm-white:#fdfbf7;--sand:#eee8de;--text:#2a2520;--text-mid:#5c574e;--text-light:#8a8272;--border:#e0d9ce;--heading:'Playfair Display',Georgia,serif;--body:'Outfit',-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background-color:var(--warm-white);color:var(--text);line-height:1.6;padding-top:80px;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;height:80px;background:rgba(253,251,247,0.95);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;z-index:1000;border-bottom:1px solid var(--border)}
+.nav-name{font-family:var(--heading);font-size:1.5rem;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:-0.02em}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{text-decoration:none;color:var(--text-mid);font-size:0.95rem;font-weight:500;transition:all 0.3s ease;position:relative}
+.nav-links a:hover, .nav-links a.active{color:var(--gold)}
+.nav-cv{padding:8px 18px;border:1px solid var(--gold);border-radius:4px;color:var(--gold)!important;font-weight:600!important}
+.nav-cv:hover{background:var(--gold);color:white!important}
+section{padding:100px 5%;position:relative}
+.section-inner{max-width:1100px;margin:0 auto}
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.section-label{font-family:var(--body);text-transform:uppercase;letter-spacing:.2em;font-size:.75rem;font-weight:600;color:var(--gold);margin-bottom:1rem;display:block}
+.section-title{font-family:var(--heading);font-size:3.5rem;line-height:1.1;margin-bottom:2rem;color:var(--navy);max-width:800px}
+.ps{margin-top:4rem}
+.pst{font-family:var(--heading);font-size:1.8rem;margin-bottom:2rem;border-bottom:1px solid var(--border);padding-bottom:1rem;color:var(--navy)}
+.pr{display:grid;gap:2rem;margin-bottom:2rem}
+.pr2w{grid-template-columns:1fr}
+.pr2{grid-template-columns:repeat(2,1fr)}
+.pr3{grid-template-columns:repeat(3,1fr)}
+.pi{background:white;padding:12px;border:1px solid var(--border);box-shadow:0 4px 15px rgba(0,0,0,0.03);transition:transform .3s ease}
+.pi:hover{transform:translateY(-5px)}
+.pi img{width:100%;height:auto;display:block;margin-bottom:12px}
+.pc{font-size:.85rem;color:var(--text-mid);line-height:1.4}
+.pc strong{color:var(--navy);display:block;margin-bottom:4px}
+.vg{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
+.vw{position:relative;padding-bottom:56.25%;height:0;background:var(--navy);border-radius:4px;overflow:hidden}
+.vw iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.vt{margin-top:1rem;font-weight:500;color:var(--navy)}
+.catg{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.catc{background:white;padding:2rem;border:1px solid var(--border);border-radius:8px;transition:all .3s ease}
+.catc:hover{border-color:var(--gold);box-shadow:0 10px 30px rgba(0,0,0,0.05)}
+.catci{font-size:2rem;margin-bottom:1.5rem}
+.catcn{font-family:var(--heading);font-size:1.4rem;margin-bottom:.5rem;color:var(--navy)}
+.catcd{font-size:.9rem;color:var(--text-mid);margin-bottom:1.5rem}
+.catcb{display:inline-block;text-decoration:none;color:var(--gold);font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.1em}
+footer{background:var(--navy);color:var(--sand);padding:60px 5%;text-align:center;font-size:.9rem}
+@media (max-width:768px){
+.section-title{font-size:2.5rem}
+.pr2,.pr3,.vg,.catg{grid-template-columns:1fr}
+.nav-links{display:none}
+}
+</style>
 </head>
 <body>
 
 <nav>
-    <a href="index.html" class="nav-name">Sauda Nabukenya</a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="S about.html">About</a>
-        <a href="archives.html" class="active">Archives</a>
-        <a href="Sresearch.html">Research</a>
-        <a href="Steaching.html">Teaching</a>
-        <a href="Scontact.html">Contact</a>
-        <a href="Nabukenya_CV_2026.pdf" class="nav-cv" target="_blank">CV</a>
-    </div>
+<a href="index.html" class="nav-name">Sauda Nabukenya</a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="S about.html">About</a>
+<a href="archives.html" class="active">Archives</a>
+<a href="Sresearch.html">Research</a>
+<a href="Steaching.html">Teaching</a>
+<a href="Scontact.html">Contact</a>
+<a href="Nabukenya_CV_2026.pdf" class="nav-cv" target="_blank">CV</a>
+</div>
 </nav>
 
-<div class="container">
-    <span class="section-label">Archival Recovery</span>
-    <h1>The Archives</h1>
-    <p class="intro">150,000 court records, two judicial archives, and a century of ordinary people's legal reasoning, recovered and preserved.</p>
+<section style="background:var(--warm-white)">
+<div class="section-inner reveal">
+<div class="section-label">Archival Recovery</div>
+<h1 class="section-title">The Archives</h1>
+<p style="font-size:1.25rem;color:var(--text-mid);max-width:800px">150,000 court records, two judicial archives, and a century of ordinary people's legal reasoning, recovered and preserved.</p>
 
-    <div class="ps">
-        <div class="pst">Inside the Archive</div>
-        
-        <div class="pr pr2w">
-            <div class="pi">
-                <img src="images/archive1.jpg" alt="High Court records">
-                <div class="pc"><strong>Image 1</strong> High Court of Uganda records stored in a basement room in Kampala, packed floor to ceiling prior to archival recovery. These records were uncatalogued and at risk of deterioration when they were discovered.</div>
-            </div>
-        </div>
+<div class="ps">
+<div class="pst">Inside the Archive</div>
 
-        <div class="pr pr3">
-            <div class="pi">
-                <img src="images/archive2.jpg" alt="Archival team">
-                <div class="pc"><strong>Image 2</strong> Members of the archival team who organized and catalogued the High Court and Mengo Court records. The project involved archivists, academics, students, and court staff working collaboratively.</div>
-            </div>
-            <div class="pi">
-                <img src="images/archive3.jpg" alt="Sauda Nabukenya">
-                <div class="pc"><strong>Image 3</strong> Sauda Nabukenya working inside the High Court archive, Kampala. This photograph was taken during the initial stages of assessing the condition and scope of the collection.</div>
-            </div>
-            <div class="pi">
-                <img src="images/archive4.jpg" alt="Unsorted records">
-                <div class="pc"><strong>Image 4</strong> Unsorted court records at the Mengo Court prior to organizing and cataloguing. These files document cases heard in Buganda Kingdom courts and had been stored without archival order.</div>
-            </div>
-        </div>
-
-        <div class="pr pr2">
-            <div class="pi">
-                <img src="images/archive5.jpg" alt="Uganda National Archives">
-                <div class="pc"><strong>Image 5</strong> Sauda Nabukenya organizing court records on shelves at the Uganda National Archives. This stage followed cataloguing and involved long-term preservation and transfer.</div>
-            </div>
-            <div class="pi">
-                <img src="images/archive6.jpg" alt="Mengo Court project">
-                <div class="pc"><strong>Image 6</strong> Sauda Nabukenya sorting and reading court records during the cataloguing project at Mengo Court. The work involved identifying case types, dates, jurisdictions, and languages of record.</div>
-            </div>
-        </div>
-
-        <div class="pr pr2">
-            <div class="pi">
-                <img src="images/archive7.jpg" alt="Mengo Court archive">
-                <div class="pc"><strong>Image 7</strong> The Mengo Court archive filled with records of the Buganda Kingdom. These files include civil and criminal proceedings written primarily in Luganda.</div>
-            </div>
-            <div class="pi">
-                <img src="images/archive8.jpg" alt="Mengo interior">
-                <div class="pc"><strong>Image 8</strong> Interior view of the Mengo Court archive. The collection documents decades of adjudication in Buganda’s native courts.</div>
-            </div>
-        </div>
-
-        <div class="pr pr2">
-            <div class="pi">
-                <img src="images/archive9.jpg" alt="Bundled records">
-                <div class="pc"><strong>Image 9</strong> A bundled set of Buganda Kingdom court records. Files were originally stored in tied bundles before archival rehousing.</div>
-            </div>
-            <div class="pi">
-                <img src="images/archive10.jpg" alt="Court record detail">
-                <div class="pc"><strong>Image 10</strong> Buganda Kingdom court record from the Ggombolola Enkulu Ey’Olukiko, Mmengo, written in Luganda. These files record the names of complainants, defendants, witnesses, and presiding judges, and document everyday legal reasoning in Buganda’s native courts.</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section-label" style="margin-top: 80px;">Multimedia</div>
-    <h2>Featured Presentations</h2>
-    <div class="vg">
-        <div class="vw">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="vw">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="section-label" style="margin-top: 60px;">In Production</div>
-    <h2>Archival Project Films</h2>
-    <div style="background: var(--sand); padding: 50px 30px; border-radius: 8px; text-align: center; border: 1px dashed var(--border);">
-        <p style="font-family: var(--heading); font-size: 1.25rem; color: var(--text-mid); max-width: 650px; margin: 0 auto;">Documentary films detailing the complete archival recovery process are currently in production.</p>
-        <span style="display: inline-block; margin-top: 20px; color: var(--gold); font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.85rem;">Coming Soon</span>
-    </div>
+<div class="pr pr2w">
+<div class="pi">
+<img src="images/archive1.jpg" alt="High Court records">
+<div class="pc"><strong>Image 1</strong> High Court of Uganda records stored in a basement room in Kampala, packed floor to ceiling prior to archival recovery. These records were uncatalogued and at risk of deterioration when they were discovered.</div>
+</div>
 </div>
 
-<footer>
-    <p>&copy; 2026 Sauda Nabukenya. All rights reserved.</p>
-</footer>
+<div class="pr pr3">
+<div class="pi">
+<img src="images/archive2.jpg" alt="Archival team">
+<div class="pc"><strong>Image 2</strong> Members of the archival team who organized and catalogued the High Court and Mengo Court records. The project involved archivists, academics, students, and court staff working collaboratively.</div>
+</div>
+<div class="pi">
+<img src="images/archive3.jpg" alt="Sauda Nabukenya">
+<div class="pc"><strong>Image 3</strong> Sauda Nabukenya working inside the High Court archive, Kampala. This photograph was taken during the initial stages of assessing the condition and scope of the collection.</div>
+</div>
+<div class="pi">
+<img src="images/archive4.jpg" alt="Unsorted records">
+<div class="pc"><strong>Image 4</strong> Unsorted court records at the Mengo Court prior to organizing and cataloguing. These files document cases heard in Buganda Kingdom courts and had been stored without archival order.</div>
+</div>
+</div>
 
+<div class="pr pr2">
+<div class="pi">
+<img src="images/archive5.jpg" alt="National Archives">
+<div class="pc"><strong>Image 5</strong> Sauda Nabukenya organizing court records on shelves at the Uganda National Archives. This stage followed cataloguing and involved long-term preservation and transfer.</div>
+</div>
+<div class="pi">
+<img src="images/archive6.jpg" alt="Mengo Court sorting">
+<div class="pc"><strong>Image 6</strong> Sauda Nabukenya sorting and reading court records during the cataloguing project at Mengo Court. The work involved identifying case types, dates, jurisdictions, and languages of record.</div>
+</div>
+</div>
+
+<div class="pr pr2">
+<div class="pi">
+<img src="images/archive7.jpg" alt="Mengo Court archive">
+<div class="pc"><strong>Image 7</strong> The Mengo Court archive filled with records of the Buganda Kingdom. These files include civil and criminal proceedings written primarily in Luganda.</div>
+</div>
+<div class="pi">
+<img src="images/archive8.jpg" alt="Mengo archive interior">
+<div class="pc"><strong>Image 8</strong> Interior view of the Mengo Court archive. The collection documents decades of adjudication in Buganda’s native courts.</div>
+</div>
+</div>
+
+<div class="pr pr2">
+<div class="pi">
+<img src="images/archive9.jpg" alt="Bundled records">
+<div class="pc"><strong>Image 9</strong> A bundled set of Buganda Kingdom court records. Files were originally stored in tied bundles before archival rehousing.</div>
+</div>
+<div class="pi">
+<img src="images/archive10.jpg" alt="Luganda court record">
+<div class="pc"><strong>Image 10</strong> Buganda Kingdom court record from the Ggombolola Enkulu Ey’Olukiko, Mmengo, written in Luganda. These files record the names of complainants, defendants, witnesses, and presiding judges, and document everyday legal reasoning in Buganda’s native courts.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:white">
+<div class="section-inner reveal">
+<div class="section-label">Multimedia</div>
+<div class="section-title">Featured Presentations</div>
+<div class="vg">
+<div><div class="vw"><iframe src="https://www.youtube.com/embed/5LXaNYQeXj4" allowfullscreen loading="lazy"></iframe></div><div class="vt">The High Court of Uganda Archive Project</div></div>
+<div><div class="vw"><iframe src="https://www.youtube.com/embed/vwQo8EJbHbU" allowfullscreen loading="lazy"></iframe></div><div class="vt">Research Career Development - Sauda Nabukenya</div></div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--warm-white)">
+<div class="section-inner reveal">
+<div class="section-label">Catalogues</div>
+<div class="section-title">Digital Findings Aids</div>
+<div class="catg">
+<div class="catc"><div class="catci">📋</div><div class="catcn">High Court Archive Catalogue</div><div class="catcd">Civil and Criminal Cases catalogued at the item level by case type, parties, and date.</div><a href="#" class="catcb">Download PDF &rarr;</a></div>
+<div class="catc"><div class="catci">📚</div><div class="catcn">Mengo Court Archive Catalogue</div><div class="catcd">Native court records from Buganda's principal court, in Luganda. Prepared by the University of Michigan, Makerere University, and the National Records Centre.</div><a href="#" class="catcb">Download PDF &rarr;</a></div>
+</div>
+</div>
+</section>
+
+<footer>&copy; 2026 Sauda Nabukenya &middot; Utah State University</footer>
+
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add('visible')});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(e=>o.observe(e));
+</script>
 </body>
 </html>
